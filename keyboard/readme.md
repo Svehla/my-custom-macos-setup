@@ -47,8 +47,69 @@ TODO:
 
 ## svehlify custom carabiner configs
 
-```json
 
+### downloaded `richi` configs
+
+[original source from karabiner page](https://pqrs.org/osx/karabiner/complex_modifications/#Richi_Select_Word_PC)
+
+
+```json
+{
+  "description": "richi - command+shift+right To options+shift+right ",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "right_arrow",
+        "modifiers": {
+          "mandatory": [
+            "left_command",
+            "left_shift"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "right_arrow",
+          "modifiers": [
+            "left_option",
+            "left_shift"
+          ]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+{
+  "description": "richi - command+shift+left To options+shift+left",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "left_arrow",
+        "modifiers": {
+          "mandatory": [
+            "left_command",
+            "left_shift"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "left_arrow",
+          "modifiers": [
+            "left_option",
+            "left_shift"
+          ]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+},
+```
+
+### my custom configs
+```json
   {
     "description": "cmd+arrow-left -> Jump one word left like windows keyboard (svehlify custom)",
     "manipulators": [
@@ -149,7 +210,7 @@ TODO:
 
 
     {
-      "description": "make remove works again (custom svehlify)",
+      "description": "make remove works again with same keys as *macos* default (custom svehlify)",
       "manipulators": [
         {
           "from": {
