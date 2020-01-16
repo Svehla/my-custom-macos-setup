@@ -20,7 +20,6 @@ Use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keybo
 | fn                                     | left_gui(equal o `left_command`)      |
 | right_gui (equals to `right_command`)  | right_alt (equals to `right_option`)  |
 | non_us_bakslash                        | grave_accent_and_tilde (`)            |
-| Richi - Select Word PC Style (you must use swape COMMAND and CTRL in other case) | SET ALL RULES! |
 
 
 #### notes
@@ -29,7 +28,7 @@ Use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keybo
 
 ### complex modifications
 
-shortcuts inspirations from download from: https://madogiwa.github.io/KE-complex_modifications/
+shortcuts inpsirations download from: https://madogiwa.github.io/KE-complex_modifications/
 
 
 ## svehlify custom carabiner configs
