@@ -19,25 +19,34 @@ Use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keybo
 | -------------------------------------- | ------------------------------------- |
 | fn                                     | left_gui(equal o `left_command`)      |
 | right_gui (equals to `right_command`)  | right_alt (equals to `right_option`)  |
-| non_us_bakslash                        | grave_accent_and_tilde (`)            |
+| non_us_backslash                       | grave_accent_and_tilde (`)            |
 
 
 #### notes
 [non_us_backslash inspiration](https://github.com/pqrs-org/Karabiner-Elements/issues/1028)
+
+### external windows keyboards confs
+
+| From key                               | To key                                |
+| -------------------------------------- | ------------------------------------- |
+| left_control                           | left_command                          |
+| left_command                           | left_control                          |
 
 
 ### complex modifications
 
 shortcuts inpsirations download from: https://madogiwa.github.io/KE-complex_modifications/
 
+external used "plugins":
+- exchange command + arrow keys with control = arrow keys
+- richi - command+shift+right to options+shift+right
+- richi - command+shift+left to options+shift+left
 
-## svehlify custom carabiner configs
+
+[`richi` configs are available there](https://pqrs.org/osx/karabiner/complex_modifications/#Richi_Select_Word_PC)
 
 
-### downloaded `richi` configs
-
-[original source from karabiner page](https://pqrs.org/osx/karabiner/complex_modifications/#Richi_Select_Word_PC)
-
+### svehlify custom carabiner configs
 
 ```json
 {
