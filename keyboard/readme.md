@@ -29,20 +29,7 @@ Use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keybo
 
 ### complex modifications
 
-shortcuts download from: https://madogiwa.github.io/KE-complex_modifications/
-
-`change shift + delete to forward delete (rev 2)`
-
-
-DOES NOT WORK: (it works only in sublime text :facepalm:)
-`exchange command + arrow keys with control + arrow keys`
--> so I created my custom bindings :D :D 
-
-
-## vscode custom layout
-
-TODO:
-
+shortcuts inspirations from download from: https://madogiwa.github.io/KE-complex_modifications/
 
 
 ## svehlify custom carabiner configs
