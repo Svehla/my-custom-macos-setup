@@ -210,51 +210,51 @@ external used "plugins":
 
 forward remove key is bind for shift backspace and removing files in finder is command + backspace
 
-```
+```json
 
   {
       "description": "cmd + backspace === delete -> make delete (forward backspace) works on same keys again (custom svehlify)",
       "manipulators": [
-          {
-              "from": {
-                  "key_code": "delete_or_backspace",
-                  "modifiers": {
-                      "mandatory": [
-                          "left_command"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "key_code": "fn",
-                      "modifiers": [
-                          "delete_or_backspace"
-                      ]
-                  }
-              ],
-              "type": "basic"
-          }
+        {
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn",
+              "modifiers": [
+                "delete_or_backspace"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
       ]
   },
   {
       "description": "cmd + backspace === delete ->make delete (forward backspace) works on same keys again (custom svehlify)",
       "manipulators": [
-          {
-              "from": {
-                  "key_code": "delete_or_backspace",
-                  "modifiers": {
-                      "mandatory": [
-                          "shift"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "key_code": "delete_forward"
-                  }
-              ],
-              "type": "basic"
-          }
+        {
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "type": "basic"
+        }
       ]
   }
   ```
