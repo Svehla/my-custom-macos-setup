@@ -48,139 +48,109 @@ external used "plugins":
 
 ### svehlify custom carabiner configs
 
-```json
-{
-  "description": "richi - command+shift+right To options+shift+right ",
-  "manipulators": [
-    {
-      "from": {
-        "key_code": "right_arrow",
-        "modifiers": {
-          "mandatory": [
-            "left_command",
-            "left_shift"
-          ]
-        }
-      },
-      "to": [
-        {
-          "key_code": "right_arrow",
-          "modifiers": [
-            "left_option",
-            "left_shift"
-          ]
-        }
-      ],
-      "type": "basic"
-    }
-  ]
-},
-{
-  "description": "richi - command+shift+left To options+shift+left",
-  "manipulators": [
-    {
-      "from": {
-        "key_code": "left_arrow",
-        "modifiers": {
-          "mandatory": [
-            "left_command",
-            "left_shift"
-          ]
-        }
-      },
-      "to": [
-        {
-          "key_code": "left_arrow",
-          "modifiers": [
-            "left_option",
-            "left_shift"
-          ]
-        }
-      ],
-      "type": "basic"
-    }
-  ]
-},
-```
+I try to simulate selecting words like on windows/linux keyboards (+ add some non standard enhance like start arrow is home/end)
 
-### my custom configs
 ```json
-  {
-    "description": "cmd+arrow-left -> Jump one word left like windows keyboard (svehlify custom)",
-    "manipulators": [
-      {
-        "from": {
-          "key_code": "left_arrow",
-          "modifiers": {
-            "mandatory": [
-              "left_command"
-            ] 
-          }
-        },
-        "to": [
-          {
+  "rules": [
+    {
+      "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (svehlify custom)",
+      "manipulators": [{
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [{
             "key_code": "left_arrow",
             "modifiers": [
-              "left_option"
+              "left_option",
+              "left_shift"
             ]
-          }
-        ],
-        "type": "basic"
-      }
-    ]
-  },
-  {
-    "description": "cmd+arrow-left -> Jump one word right like windows keyboard (svehlify custom)",
-    "manipulators": [
-      {
-        "from": {
-          "key_code": "right_arrow",
-          "modifiers": {
-            "mandatory": [
-              "left_command"
-            ]
-          }
+          }],
+          "type": "basic"
         },
-        "to": [
-          {
-            "key_code": "right_arrow",
-            "modifiers": [
-              "left_option"
-            ]
-          }
-        ],
-        "type": "basic"
-      }
-    ]
-  },
-
-    {
-      "description": "control+arrow-right -> go to the end of line (svehlify custom)",
-      "manipulators": [
         {
           "from": {
             "key_code": "right_arrow",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_command",
+                "left_shift"
               ]
             }
           },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "left_option",
+              "left_shift"
+            ]
+          }],
           "type": "basic"
         }
       ]
     },
     {
-      "description": "control+arrow-left -> go to the start of line (svehlify custom)",
-      "manipulators": [
+      "description": "command + L/R arrows -> Jump one word L/R like on windows keyboard (svehlify custom)",
+      "manipulators": [{
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "left_option"
+            ]
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "left_option"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "control + L/R arrows -> go to the start/end of line (svehlify custom)",
+      "manipulators": [{
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "left_command"
+            ]
+          }],
+          "type": "basic"
+        },
         {
           "from": {
             "key_code": "left_arrow",
@@ -190,71 +160,95 @@ external used "plugins":
               ]
             }
           },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "left_command"
+            ]
+          }],
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "control + shift + L/R arrows -> seleft from/to the start/end of line (svehlify custom)",
+      "manipulators": [{
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "left_command",
+              "left_shift"
+            ]
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "left_command",
+              "left_shift"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "cmd + backspace === delete -> make delete (forward backspace) works on same keys again (custom svehlify)",
+      "manipulators": [{
+        "from": {
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "shift"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "fn",
+          "modifiers": [
+            "delete_or_backspace"
+          ]
+        }],
+        "type": "basic"
+      }]
+    },
+    {
+      "description": "cmd + backspace === delete ->make delete (forward backspace) works on same keys again (custom svehlify)",
+      "manipulators": [{
+        "from": {
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "left_command"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_forward"
+        }],
+        "type": "basic"
+      }]
     }
+  ]
 
 ```
-
-
-## remove and delete keys
-
-forward remove key is bind for shift backspace and removing files in finder is command + backspace
-
-```json
-
-  {
-      "description": "cmd + backspace === delete -> make delete (forward backspace) works on same keys again (custom svehlify)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "delete_or_backspace",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "fn",
-              "modifiers": [
-                "delete_or_backspace"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-  },
-  {
-      "description": "cmd + backspace === delete ->make delete (forward backspace) works on same keys again (custom svehlify)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "delete_or_backspace",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_forward"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-  }
-  ```
