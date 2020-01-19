@@ -2,7 +2,7 @@
 
 ## base layout
 
-* ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! *
+- ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! \*
 
 [I prefer to use english keyboard with interpunction === czech programming keyboard](http://blog.destil.cz/2012/10/ceska-programatorska-klavesnice-pro-mac.html)
 
@@ -64,178 +64,177 @@ Sorry for that but I can't figure it how better solution than this 😞😞
 #### final Karabiner config
 
 ```json
+// ....
+// ....
+// ....
 {
-  "rules":
-    // ....
-    // ....
-    // ....
-    {
-      "rules": [
-        {
-          "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (custom svehlify)",
-          "manipulators": [
-            {
-              "from": {
-                "key_code": "left_arrow",
-                "modifiers": {
-                  "mandatory": ["left_command", "left_shift"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "left_arrow",
-                  "modifiers": ["left_option", "left_shift"]
-                }
-              ],
-              "type": "basic"
+  "rules": {
+    "rules": [
+      {
+        "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (custom svehlify)",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "left_arrow",
+              "modifiers": {
+                "mandatory": ["left_command", "left_shift"]
+              }
             },
-            {
-              "from": {
-                "key_code": "right_arrow",
-                "modifiers": {
-                  "mandatory": ["left_command", "left_shift"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "right_arrow",
-                  "modifiers": ["left_option", "left_shift"]
-                }
-              ],
-              "type": "basic"
-            }
-          ]
-        },
-        {
-          "description": "command + L/R arrows -> Jump one word L/R like on windows keyboard (custom svehlify)",
-          "manipulators": [
-            {
-              "from": {
-                "key_code": "right_arrow",
-                "modifiers": {
-                  "mandatory": ["left_command"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "right_arrow",
-                  "modifiers": ["left_option"]
-                }
-              ],
-              "type": "basic"
-            },
-            {
-              "from": {
+            "to": [
+              {
                 "key_code": "left_arrow",
-                "modifiers": {
-                  "mandatory": ["left_command"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "left_arrow",
-                  "modifiers": ["left_option"]
-                }
-              ],
-              "type": "basic"
-            }
-          ]
-        },
-        {
-          "description": "control + L/R arrows -> go to the start/end of line (custom svehlify)",
-          "manipulators": [
-            {
-              "from": {
-                "key_code": "right_arrow",
-                "modifiers": {
-                  "mandatory": ["left_control"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "right_arrow",
-                  "modifiers": ["left_command"]
-                }
-              ],
-              "type": "basic"
+                "modifiers": ["left_option", "left_shift"]
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "right_arrow",
+              "modifiers": {
+                "mandatory": ["left_command", "left_shift"]
+              }
             },
-            {
-              "from": {
-                "key_code": "left_arrow",
-                "modifiers": {
-                  "mandatory": ["left_control"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "left_arrow",
-                  "modifiers": ["left_command"]
-                }
-              ],
-              "type": "basic"
-            }
-          ]
-        },
-        {
-          "description": "control + shift + L/R arrows -> select from/to the start/end of line (custom svehlify)",
-          "manipulators": [
-            {
-              "from": {
+            "to": [
+              {
                 "key_code": "right_arrow",
-                "modifiers": {
-                  "mandatory": ["left_control", "left_shift"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "right_arrow",
-                  "modifiers": ["left_command", "left_shift"]
-                }
-              ],
-              "type": "basic"
+                "modifiers": ["left_option", "left_shift"]
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
+        "description": "command + L/R arrows -> Jump one word L/R like on windows keyboard (custom svehlify)",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "right_arrow",
+              "modifiers": {
+                "mandatory": ["left_command"]
+              }
             },
-            {
-              "from": {
+            "to": [
+              {
+                "key_code": "right_arrow",
+                "modifiers": ["left_option"]
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "left_arrow",
+              "modifiers": {
+                "mandatory": ["left_command"]
+              }
+            },
+            "to": [
+              {
                 "key_code": "left_arrow",
-                "modifiers": {
-                  "mandatory": ["left_control", "left_shift"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "left_arrow",
-                  "modifiers": ["left_command", "left_shift"]
-                }
-              ],
-              "type": "basic"
-            }
-          ]
-        },
-        {
-          "description": "backspace + shift === delete (forward backspace) -> sorry it's my own shortcut but i can't figure it out how to make it better... (custom svehlify)",
-          "manipulators": [
-            {
-              "from": {
-                "key_code": "delete_or_backspace",
-                "modifiers": {
-                  "mandatory": ["shift"]
-                }
-              },
-              "to": [
-                {
-                  "key_code": "delete_forward"
-                }
-              ],
-              "type": "basic"
-            }
-          ]
-        }
-      ]
-    }
-  // ....
-  // ....
-  // ....
+                "modifiers": ["left_option"]
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
+        "description": "control + L/R arrows -> go to the start/end of line (custom svehlify)",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "right_arrow",
+              "modifiers": {
+                "mandatory": ["left_control"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "right_arrow",
+                "modifiers": ["left_command"]
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "left_arrow",
+              "modifiers": {
+                "mandatory": ["left_control"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "left_arrow",
+                "modifiers": ["left_command"]
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
+        "description": "control + shift + L/R arrows -> select from/to the start/end of line (custom svehlify)",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "right_arrow",
+              "modifiers": {
+                "mandatory": ["left_control", "left_shift"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "right_arrow",
+                "modifiers": ["left_command", "left_shift"]
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "left_arrow",
+              "modifiers": {
+                "mandatory": ["left_control", "left_shift"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "left_arrow",
+                "modifiers": ["left_command", "left_shift"]
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
+        "description": "backspace + shift === delete (forward backspace) -> sorry it's my own shortcut but i can't figure it out how to make it better... (custom svehlify)",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "delete_or_backspace",
+              "modifiers": {
+                "mandatory": ["shift"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "delete_forward"
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      }
+    ]
+  }
 }
+// ....
+// ....
+// ....
 ```
 
 ## resources + inspiration
