@@ -2,7 +2,7 @@
 
 ## base layout
 
-- ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! \*
+* ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! *
 
 [I prefer to use english keyboard with interpunction === czech programming keyboard](http://blog.destil.cz/2012/10/ceska-programatorska-klavesnice-pro-mac.html)
 
@@ -244,8 +244,8 @@ shortcuts inspiration download from: https://madogiwa.github.io/KE-complex_modif
 
 ### selection inspiration
 
-- exchange command + arrow keys with control = arrow keys
-- richi - command+shift+right to options+shift+right
-- richi - command+shift+left to options+shift+left
+- exchange `command + arrow keys + control` = arrow keys
+- richi - `command + shift + right` to `options + shift + right`
+- richi - `command + shift + left` to `options + shift + left`
 
 [`richi` configs are available there](https://pqrs.org/osx/karabiner/complex_modifications/#Richi_Select_Word_PC)
