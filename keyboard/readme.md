@@ -48,12 +48,31 @@ external used "plugins":
 
 ### svehlify custom carabiner configs
 
+#### selecting words
+
 I try to simulate selecting words like on windows/linux keyboards (+ add some non standard enhance like start arrow is home/end)
+
+Custom reconfiguration of selection and jumping by words via editing `/Users/jakubsvehla/.config/karabiner/config.json`.
+
+Now it could works like on `windows`/`linux` keyboards + I added `home` & `end` with control + arrow key like on dell laptop keyboards. (coz mac keyboard has no `home`/`end` button)
+
+
+#### remove and backspace
+
+Now I have no fn on my macos keyboard so I cant use shortcuts like:
+
+- `fn + backspace` => delete forward
+- `fn + backspace` => remove file by finder view
+
+
+
+ 
+### final Karabiner config
 
 ```json
   "rules": [
     {
-      "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (svehlify custom)",
+      "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (custom svehlify)",
       "manipulators": [{
           "from": {
             "key_code": "left_arrow",
@@ -95,7 +114,7 @@ I try to simulate selecting words like on windows/linux keyboards (+ add some no
       ]
     },
     {
-      "description": "command + L/R arrows -> Jump one word L/R like on windows keyboard (svehlify custom)",
+      "description": "command + L/R arrows -> Jump one word L/R like on windows keyboard (custom svehlify)",
       "manipulators": [{
           "from": {
             "key_code": "right_arrow",
@@ -133,7 +152,7 @@ I try to simulate selecting words like on windows/linux keyboards (+ add some no
       ]
     },
     {
-      "description": "control + L/R arrows -> go to the start/end of line (svehlify custom)",
+      "description": "control + L/R arrows -> go to the start/end of line (custom svehlify)",
       "manipulators": [{
           "from": {
             "key_code": "right_arrow",
@@ -171,7 +190,7 @@ I try to simulate selecting words like on windows/linux keyboards (+ add some no
       ]
     },
     {
-      "description": "control + shift + L/R arrows -> seleft from/to the start/end of line (svehlify custom)",
+      "description": "control + shift + L/R arrows -> select from/to the start/end of line (custom svehlify)",
       "manipulators": [{
           "from": {
             "key_code": "right_arrow",
@@ -213,7 +232,7 @@ I try to simulate selecting words like on windows/linux keyboards (+ add some no
       ]
     },
     {
-      "description": "cmd + backspace === delete -> make delete (forward backspace) works on same keys again (custom svehlify)",
+      "description": "cmd + backspace === Try to make removing file in finder works (does not work yet (custom svehlify))",
       "manipulators": [{
         "from": {
           "key_code": "delete_or_backspace",
@@ -224,16 +243,18 @@ I try to simulate selecting words like on windows/linux keyboards (+ add some no
           }
         },
         "to": [{
-          "key_code": "fn",
-          "modifiers": [
-            "delete_or_backspace"
-          ]
+          "key_code": "delete_or_backspace",
+          "modifiers": {
+            "mandatory": [
+              "left_command"
+            ]
+          }
         }],
         "type": "basic"
       }]
     },
     {
-      "description": "cmd + backspace === delete ->make delete (forward backspace) works on same keys again (custom svehlify)",
+      "description": "cmd + backspace === delete -> make delete (forward backspace) works on same keys again (custom svehlify)",
       "manipulators": [{
         "from": {
           "key_code": "delete_or_backspace",

@@ -6,5 +6,5 @@ to install:
 - brew
 - Docker
 - sublime text
-- vscode
+- vscode (TODO: add custom vscode configs)
 - nodejs
