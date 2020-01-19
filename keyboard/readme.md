@@ -4,7 +4,7 @@
 
 - ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! \*
 
-[I prefer to use english keyboard with interpunction === czech programming keyboard](http://blog.destil.cz/2012/10/ceska-programatorska-klavesnice-pro-mac.html)
+[I prefer to use english keyboard with interpunction/diacritics === czech programming keyboard](http://blog.destil.cz/2012/10/ceska-programatorska-klavesnice-pro-mac.html)
 
 ### installation
 
@@ -29,7 +29,7 @@ I use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom key
 | right_option                          | fn                                   |
 
 
-![Custom key swapping modifications](/keyboad/karabiner-mac-key-swapping.png)
+![Custom key swapping modifications](/keyboard/karabiner-mac-key-swapping.png)
 
 
 
@@ -70,7 +70,7 @@ Sorry for that but I can't figure it how better solution than this 😞😞
 #### final Karabiner config
 
 
-![karabiner Mac Custom Shortcuts](/keyboad/karabiner-mac-custom-shortcuts.png)
+![karabiner Mac Custom Shortcuts](/keyboard/karabiner-mac-custom-shortcuts.png)
 
 ```json
 // ....
