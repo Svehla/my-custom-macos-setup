@@ -19,13 +19,19 @@ Steps:
 
 I use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keyboard MacOs mapping
 
-### Simple modifications
+### Custom key swapping modifications
 
 | From key                              | To key                               |
 | ------------------------------------- | ------------------------------------ |
 | fn                                    | left_gui(equal o `left_command`)     |
 | right_gui (equals to `right_command`) | right_alt (equals to `right_option`) |
 | non_us_backslash                      | grave_accent_and_tilde (`)           |
+| right_option                          | fn                                   |
+
+
+![Custom key swapping modifications](/keyboad/karabiner-mac-key-swapping.png)
+
+
 
 #### notes
 
@@ -62,6 +68,9 @@ So I create my own custom shortcut:
 Sorry for that but I can't figure it how better solution than this 😞😞
 
 #### final Karabiner config
+
+
+![karabiner Mac Custom Shortcuts](/keyboad/karabiner-mac-custom-shortcuts.png)
 
 ```json
 // ....
