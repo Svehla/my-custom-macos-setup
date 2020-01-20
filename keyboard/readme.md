@@ -27,7 +27,11 @@ I use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom key
 | right_gui (equals to `right_command`) | right_alt (equals to `right_option`) |
 | non_us_backslash                      | grave_accent_and_tilde (`)           |
 | right_option                          | fn                                   |
+| left_command                          | left_option                          |
 
+
+I switched `left_command` with `left_option` for more comfortable writing of czech diacritics on czech programming keyboard...
+I think that this features will be problem on window/linux because there is only right `altGr` but I hope I'll figure it out somehow in the future
 
 ![Custom key swapping modifications](/keyboard/karabiner-mac-key-swapping.png)
 
