@@ -75,6 +75,15 @@ Sorry for that but I can't figure it how better solution than this 😞😞
 
 
 ![karabiner Mac Custom Shortcuts](/keyboard/karabiner-mac-custom-shortcuts.png)
+![karabiner config for all devices coz vim](/keyboard/krabainer-switch-escape-and-caps.png)
+![karabiner my mechanic windows keyboard](/keyboard/karabiner-silver-mechanical-keyboard-modification.png)
+
+
+
+
+
+
+
 
 ```json
 // ....
