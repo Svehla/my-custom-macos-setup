@@ -49,11 +49,11 @@ I added these shortcuts:
     "command": "workbench.action.toggleZenMode"
   },
   {
-    "key": "cmd+0",
+    "key": "cmd+9",
     "command": "workbench.action.terminal.focus"
   },
   {
-    "key": "cmd+0",
+    "key": "cmd+9",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   }
