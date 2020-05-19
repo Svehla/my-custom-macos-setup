@@ -11,6 +11,7 @@ to install:
 - IDA
 - google drive
 - whole xcode (it include dev tools like clang)
+- virtualbox
 
 CLI
 - nvm
