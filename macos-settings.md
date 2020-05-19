@@ -17,3 +17,9 @@ TODO: how i Check cz lang correction??? i did it somehow... not sure
 
 ## Trackpad
 Secondary click: checked
+
+
+## Keyboard
+### shortcuts
+#### accessibility
+- invert colours: cmd + q
