@@ -23,3 +23,12 @@ Secondary click: checked
 ### shortcuts
 #### accessibility
 - invert colours: cmd + q
+
+## apple watch to unlock the PC
+
+
+
+
+------------------------------
+## calendar
+- sync with google
