@@ -1,35 +1,38 @@
 ## plugins: 
+- eslint
+- vim
+- c/c++
+- code spell checker
+- czech - code spell checker
+- docker
+- dotEnv
+- Dracula official
+- eslint
+- git lens
+- graphql
+- graphql for vscode
+- vscode-icons
+- language-stylus
+- laserWave
+- liveShare
+- Nord
+- npm
+- prettier
+- python
+- rc-beautify
+- remote - SSH
+- rust
+- shades of purple
+- svelte
+- svg preview
+- vscode-styled-components
+- aws toolkit
 
-c/c++
-code spell checker
-czech - code spell checker
-docker
-dotEnv
-Dracula official
-eslint
-git lens
-graphql
-graphql for vscode
-vscode-icons
-language-stylus
-laserWave
-liveShare
-Nord
-npm
-prettier
-python
-rc-beautify
-remote - SSH
-rust
-shades of purple
-svelte
-svg preview
-vim
-vscode-styled-components
-aws toolkit
 
 
-
+## custom setup
+- set relative lines
+- line-height: 15
 
 ## custom keybindings
 you can enter to custom keybinding by pressing: `cmd+k cmd+s` and go to custom 
