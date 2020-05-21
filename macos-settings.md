@@ -24,7 +24,7 @@ Secondary click: checked
 > source: https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos/
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-### finder
+## Finder
 
 - set default order by file/folder name 
 
