@@ -1,7 +1,4 @@
-
-
 # Sublime text
-
 
 ## enable vim
 
@@ -61,3 +58,25 @@ and create `MarkdownImages.sublime-settings` file with content:
 
 
 now your markdown should view inline images 
+
+## Disable hard-space 
+
+source: https://superuser.com/questions/78245/how-to-disable-the-option-space-key-combination-for-non-breaking-spaces
+
+
+**Default (OSX).sublime-keymap**
+
+```json
+[
+  
+  {
+   "keys": ["alt+space"],
+   "command": "insert_snippet",
+   "args": {"contents": " " }
+   }
+]
+```
+
+
+
+
