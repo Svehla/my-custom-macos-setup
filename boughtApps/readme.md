@@ -1,7 +1,6 @@
 # commercial apps
 
-## better touch tools
-exported config to `./Default.bttpresets`
+
 
 ## switchResX
 
@@ -14,3 +13,9 @@ I use 4k Monitor so I have to dump my PC resolution to the similar size -> so Ha
 [official webpage](https://matthewpalmer.net/rocket/)
 
 Best emoji app for my own satisfaction
+
+## Deprecated
+
+### better touch tools
+exported config to `./Default.bttpresets`
+- now i'am using just Rectangle Open source app

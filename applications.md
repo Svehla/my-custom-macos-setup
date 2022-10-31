@@ -24,7 +24,7 @@ to install:
 - slack
 - spotify
 - rocket
-- better touch tool
+- Rectangle
 - at&t Global network VPN
 - ableton Live
 - kemper
