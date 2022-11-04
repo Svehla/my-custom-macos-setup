@@ -15,6 +15,12 @@ Steps:
 - find keyboard in system preference -> Language & Text -> Input Source
 - test `option + diacritics`
 
+## Hard breaks
+
+Disable hard space on the macOS
+
+https://superuser.com/questions/78245/how-to-disable-the-option-space-key-combination-for-non-breaking-spaces/142573#142573
+
 ## Custom key mapping
 
 I use [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) for custom keyboard MacOs mapping
