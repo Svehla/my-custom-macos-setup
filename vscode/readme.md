@@ -109,6 +109,12 @@ I added these shortcuts:
   {
       "key": "cmd+g",
       "command": "editor.action.goToTypeDefinition"
+  },
+  // when i click to escape in the vim mode i don't want to lost focus for jupyter notebook
+  {
+    "key": "escape",
+    "command": "-notebook.cell.quitEdit",
+    "when": "inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'"
   }
 ]
 ```
