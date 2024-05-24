@@ -96,9 +96,31 @@ Sorry for that but I can't figure it how better solution than this 😞😞
 // ....
 // ....
 // ....
+
 {
   "title": "Svehlify custom shortcuts",
   "rules": [
+    {
+      "description": "Change left_option + space to normal space",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
     {
       "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (custom svehlify)",
       "manipulators": [
