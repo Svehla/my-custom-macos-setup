@@ -47,6 +47,7 @@ cmd+p > open keyboard shortcuts:
 ```json
 // Place your key bindings in this file to overwrite the defaults
 // Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to overwrite the defaults
 [
     {
         "key": "cmd+d",
@@ -182,4 +183,56 @@ cmd+p > open keyboard shortcuts:
         "command": "-workbench.action.openGlobalKeybindings"
     }
 ]
+	{
+		"key": "cmd+k cmd+r",
+		"command": "-git.revertSelectedRanges",
+		"when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+	},
+	{
+		"key": "cmd+k alt+cmd+s",
+		"command": "-git.stageSelectedRanges",
+		"when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+	},
+	{
+		"key": "cmd+k cmd+n",
+		"command": "-git.unstageSelectedRanges",
+		"when": "editorTextFocus && isInDiffEditor && isInDiffRightEditor && !operationInProgress && resourceScheme == 'git'"
+	},
+	{
+		"key": "cmd+k v",
+		"command": "-markdown.showPreviewToSide",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "cmd+k m",
+		"command": "-notebook.cell.changeLanguage",
+		"when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
+	},
+	{
+		"key": "cmd+k cmd+i",
+		"command": "-workbench.action.showHover",
+		"when": "!editorTextFocus"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.debug.panel.action.clearReplAction",
+		"when": "focusedView == 'workbench.panel.repl.view'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-workbench.debug.panel.action.clearReplAction",
+		"when": "focusedView == 'workbench.panel.repl.view'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.clear",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-workbench.action.terminal.clear",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	}
+]
+
 ```
