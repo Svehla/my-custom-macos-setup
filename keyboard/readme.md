@@ -1,5 +1,6 @@
 # Keyboards
 
+
 ## base layout
 
 - ! ! ! TOTALLY AMAZING FOR CZECH PROGRAMMERS ! ! ! \*
@@ -78,6 +79,22 @@ So I create my own custom shortcut:
 
 Sorry for that but I can't figure it how better solution than this 😞😞
 
+## Disable chaing screen via keyboard
+
+disable-mission-control
+```
+🛠 Disable Desktop Switching Shortcuts
+1. Open System Settings (formerly known as System Preferences).
+2. Navigate to Keyboard > Keyboard Shortcuts.
+3. In the sidebar, select Mission Control.
+4. In the right pane, uncheck the following options:
+  - Move left a space
+  - Move right a space
+```
+
+![Disable mission control](./disable-mission-control.png)
+
+
 #### final Karabiner config
 
 
@@ -141,7 +158,7 @@ Sorry for that but I can't figure it how better solution than this 😞😞
           "type": "basic"
         }
       ]
-    }
+    },
     {
       "description": "command + shift + L/R arrows -> Select word L/R like on windows keyboard (custom svehlify)",
       "manipulators": [
@@ -319,3 +336,4 @@ shortcuts inspiration download from: https://madogiwa.github.io/KE-complex_modif
 - richi - `command + shift + left` to `options + shift + left`
 
 [`richi` configs are available there](https://pqrs.org/osx/karabiner/complex_modifications/#Richi_Select_Word_PC)
+
